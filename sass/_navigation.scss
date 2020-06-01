@@ -325,6 +325,51 @@
         width: 160px;
     }
 
+    &__social {
+        display: flex;
+    }
+
+    &__socialItem {
+        @include transition2;
+        margin-left: 32px;
+        opacity: 0.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+
+        &:before {
+            @include transition2;
+            content: '';
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            background: $g-01;
+            bottom: -24px;
+            border-radius: 100%;
+            opacity: 0;
+        }
+
+        &:hover {
+            opacity: 1;
+            transform: translateY(-4px);
+
+            &:before {
+                opacity: 1;
+                bottom: -16px;
+            }
+        }
+    }
+
+    &__iconSocial {
+        width: 32px;
+        height: 32px;
+    }
+
     &__links {
         @include sm {
             margin-top: 32px;

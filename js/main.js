@@ -160,7 +160,7 @@ function footer() {
             url: "#"
         }, {
             name: "Instagram",
-            icon: `${pathAssets}/social-white/facebook.svg`,
+            icon: `${pathAssets}/social-white/instagram.svg`,
             url: "#"
         },
         {
@@ -190,7 +190,7 @@ function footer() {
 
     social.forEach(function (el) {
         let templateSocial = `
-        <a class="footer_socialItem" href="${el.url}">
+        <a class="footer__socialItem" href="${el.url}">
         <figure class="footer__iconSocial"><img src="${el.icon}" alt="${el.name}"></figure>
         </a>`;
         document.querySelector('.footer__social').insertAdjacentHTML('beforeend', templateSocial);

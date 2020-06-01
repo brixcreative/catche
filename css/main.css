@@ -3325,6 +3325,62 @@ figure img {
   width: 160px;
 }
 
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__socialItem {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-left: 32px;
+  opacity: 0.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.footer__socialItem:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer__socialItem:before {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  background: linear-gradient(148deg, #e6764d, #FFA825);
+  bottom: -24px;
+  border-radius: 100%;
+  opacity: 0;
+}
+
+.footer__socialItem:hover {
+  opacity: 1;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.footer__socialItem:hover:before {
+  opacity: 1;
+  bottom: -16px;
+}
+
+.footer__iconSocial {
+  width: 32px;
+  height: 32px;
+}
+
 @media screen and (max-width: 799px) {
   .footer__links {
     margin-top: 32px;
