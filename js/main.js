@@ -1,4 +1,4 @@
-const pathAssets = "https://rafaelavlucas.github.io/brixms/landing1/assets";
+const pathAssets = "https://brixcreative.github.io/catche/assets";
 
 window.addEventListener("load", event => {
     // Anime Modules
