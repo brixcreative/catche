@@ -1,0 +1,497 @@
+@import 'foundations/reset',
+'foundations/breakpoints',
+'foundations/colours',
+'foundations/textstyles',
+'foundations/styles',
+'foundations/components',
+'foundations/swiper',
+'navigation',
+'layout';
+
+.showGrid,
+.btnDs {
+    background-color: white;
+    box-shadow: $shadow;
+    border: 1px solid rgba(black, 0.2);
+    padding: 8px;
+    position: fixed;
+    z-index: 4;
+    border-radius: $radius;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.btnDs {
+    z-index: 2;
+}
+
+.grid {
+    //@include paddingSide;
+    position: fixed;
+    z-index: 4;
+    width: calc(100% - 10vw);
+    left: 5vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    background-color: rgba(#720638, 0.2);
+
+    &__wrapper {
+        max-width: calc(1440px - 10vw);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-right: 1px solid;
+        border-color: #636363;
+
+    }
+
+    &__wrapper2 {
+        max-width: 1024px;
+        width: calc(100% - 10vw);
+        height: 100%;
+        background-color: rgba(#29458b, 0.15);
+        position: absolute;
+        top: 0;
+        border-left: 1px solid;
+        border-right: 1px solid;
+        border-color: #636363;
+
+        @include xs {
+            width: calc(100% - 48px);
+        }
+    }
+
+    &__wrapper3 {
+        max-width: $textMaxWidth;
+        width: calc(100% - 10vw);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        border-left: 1px dashed;
+        border-right: 1px dashed;
+        border-color: #5f5a6a;
+        z-index: 3;
+
+        @include xs {
+            width: calc(100% - 48px);
+        }
+    }
+
+    &__column {
+        border-left: 1px solid;
+        border-color: #636363;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+
+    &.show {
+        display: flex;
+    }
+}
+
+.spacing {
+    height: 100px;
+}
+
+.background {
+    height: 50vh;
+    min-height: 300px;
+    background-color: $neu-07;
+}
+
+.wrapper {
+    display: flex;
+    background-color: $neu-02;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 690px;
+
+    @include sm {
+        //min-height: initial;
+    }
+}
+
+.categories {
+    transition: width 0.4s ease;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    background-color: $neu-03;
+    position: relative;
+    padding: 0px 5%;
+    font-family: $font2;
+
+    // Layout
+
+    &__logo {
+
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 180px;
+        width: 10%;
+
+        @include sm {
+            top: 32px;
+            width: 100px;
+        }
+
+    }
+
+    &__closeIcon {
+        display: none;
+    }
+
+    &__container {
+        margin: 0px auto;
+        padding: 48px 0;
+        max-width: 900px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+        align-content: center;
+
+        @include sm {
+            padding: 32px 0 32px 0;
+            grid-gap: 16px;
+        }
+
+        @include xs {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__card {
+        @include cardStyle1;
+        @include animationEnter;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        background: linear-gradient(120deg, #fff, #fff, rgba(#F6F1FF, 0.5), rgba(#DBC9F1, 0.5));
+        background-position: -200%;
+        background-size: 200%;
+        transition: all 0.2s ease, background-position 0.3s ease;
+
+
+
+        &:hover {
+
+            background-position: -105%;
+
+        }
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 32px;
+
+        @include sm {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        color: $m-02;
+    }
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        display: none;
+        padding: 80px 0;
+        justify-content: center;
+
+        @include sm {
+            padding: 48px 0;
+        }
+    }
+
+    // When Collapsed and Closed
+
+    &.collapse {
+        width: 300px;
+        margin: 0;
+        padding: 40px 32px;
+
+
+        @include sm {
+            height: 100%;
+        }
+
+        @include sm {
+            width: 200px;
+            padding: 0px;
+        }
+
+        .categories {
+
+            &__logo {
+                max-width: 120px;
+                top: calc(100% - 90px);
+                width: 40%;
+                transition: all 0.4s 0.2s ease, top 0.4s ease;
+            }
+
+            &__closeIcon {
+                @include transition;
+                display: flex;
+                position: absolute;
+                width: 32px;
+                height: 32px;
+                right: 32px;
+                top: 32px;
+                cursor: pointer;
+                opacity: 0.5;
+                background-image: url("../assets/icons-black/icon-13.svg");
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                @include sm {
+                    right: 16px;
+                    top: 16px;
+                }
+            }
+
+
+            &__container {
+                grid-template-columns: 1fr;
+                grid-gap: 24px;
+                padding: 80px 0;
+
+                @include sm {
+                    grid-gap: 16px;
+                    padding: 0 16px;
+                    height: 100%;
+                    grid-template-rows: repeat(6, 48px);
+
+                }
+            }
+
+            &__card {
+                min-width: 168px;
+                transition: all 0.4s ease, transform 0.2s ease, border-radius 0s;
+                flex-direction: row;
+                align-items: center;
+                padding: 16px;
+                opacity: 0.7;
+                background: rgba(white, 0.5);
+
+                @include sm {
+                    padding: 12px;
+                }
+
+                &:hover {
+                    background: rgba(white, 1);
+                    @include transition2;
+
+                }
+
+                &.selected {
+                    opacity: 1;
+                    background: linear-gradient(120deg, #fff, #fff, rgba(#F6F1FF, 0.5), rgba(#DBC9F1, 0.5));
+                    background-position: -105%;
+
+                    box-shadow: none;
+
+                    &:hover {
+                        transform: none;
+                    }
+
+                }
+
+
+            }
+
+            &__icon {
+                margin-bottom: 0;
+                margin-right: 24px;
+                width: 32px;
+                height: 32px;
+                min-width: 32px;
+
+                @include sm {
+                    width: 24px;
+                    height: 24px;
+                    min-width: 24px;
+                    margin-right: 16px;
+                }
+
+
+            }
+        }
+
+    }
+
+    &.close {
+        width: 100px;
+        padding: 0px;
+        grid-template-columns: 1fr;
+
+        @include sm {
+            width: 72px;
+
+        }
+
+        .categories {
+
+            &__logo {
+
+                top: calc(100% - 64px);
+                width: 60%;
+            }
+
+            &__closeIcon {
+                transform: rotate(180deg) translateX(-50%);
+                right: 50%;
+            }
+
+            &__container {
+                justify-items: center;
+                padding: 0px;
+            }
+
+            &__card {
+                width: 48px;
+                height: 48px;
+                min-width: 48px;
+                padding: 0;
+                box-shadow: none;
+                border: 0;
+                background-color: transparent;
+                padding: 8px;
+                opacity: 0.35;
+                border-radius: 100%;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.2s ease, border-radius 1s, background-color 1s ease;
+                background: transparent;
+
+                &:hover {
+                    @include transition2;
+                }
+
+                &.selected {
+                    background-color: transparent;
+                    background: transparent;
+                    box-shadow: none;
+                    opacity: 1;
+
+                }
+
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+            }
+
+            &__icon {
+                margin-bottom: 0px;
+                margin-right: 0px;
+
+            }
+
+            &__text {
+                display: none;
+            }
+        }
+    }
+
+    // Content and Item
+    &__modules {
+        display: none;
+
+        &.active {
+            @include animationEnter;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 1440px;
+            width: 100%;
+            height: 100%;
+            padding: 0 5vw;
+        }
+    }
+
+    &__modulesContent {
+        margin: 48px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 48px 5%;
+
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include sm {
+            margin: 32px 0;
+        }
+
+        @include xs {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title {
+        @include font-xl;
+        font-family: $font2;
+        color: $m-01;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        ///max-width: 400px;
+
+        &:hover {
+            .categories {
+                &__image {
+                    box-shadow: inset 0px 0px 0px 1px $neu-05,
+                        0px 8px 20px -20px $neu-09;
+                    transform: scale(1.05);
+                }
+
+                &__itemTitle {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__image {
+        background-color: white;
+        border-radius: $radius;
+        overflow: hidden;
+        @include transition2;
+    }
+
+    &__itemTitle {
+        @include transition2;
+        @include font-s;
+        opacity: 0.6;
+        margin-top: 16px;
+        font-family: $font2;
+        color: $m-01;
+    }
+}

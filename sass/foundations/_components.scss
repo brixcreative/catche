@@ -1,0 +1,309 @@
+.ctaContainer {
+    width: 100%;
+
+    @include sm {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.cta {
+    @include transition2;
+    @include ctaStyle;
+    padding: 0 32px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 0px rgba($m-03, 0);
+    position: relative;
+    overflow: hidden;
+    border-radius: 32px;
+
+    span {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        &:before,
+        &:after {
+            @include transition;
+            content: '';
+            width: 8px;
+            height: 2px;
+            position: absolute;
+            right: 8px;
+            opacity: 0;
+        }
+
+        &:before {
+            transform: rotate(45deg) translateY(-4px);
+        }
+
+        &:after {
+            transform: rotate(-45deg) translateY(4px);
+        }
+    }
+
+    &:before {
+        @include transition;
+        content: '';
+        width: 0%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background: $m-01;
+        opacity: 0.1;
+        border-radius: inherit;
+    }
+
+    &:hover {
+
+        padding: 0 48px 0 32px;
+
+        &:before {
+            width: 100%;
+        }
+
+        span {
+
+            &:before,
+            &:after {
+                opacity: 1;
+                right: -24px;
+            }
+        }
+    }
+
+    &.cta01 {
+        @include cta01;
+    }
+
+    &.cta01alt {
+        @include cta01alt;
+    }
+
+    &.cta02 {
+        @include cta02;
+    }
+
+    &.cta02alt {
+        @include cta02alt;
+    }
+}
+
+.ctaLink {
+    @include ctaStyle;
+    @include transition2;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    &__text {
+        position: relative;
+
+        &:before,
+        &:after {
+            @include transition;
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: $neu-08;
+        }
+
+        &:after {
+            left: 0;
+            width: 0;
+            transition-delay: 0.2s;
+        }
+    }
+
+    &:hover {
+        .ctaLink {
+            &__text {
+                &:before {
+                    width: 0;
+                }
+
+                &:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.hiperlink {
+    @include transition2;
+    text-decoration: underline;
+
+    &:hover {
+        opacity: 0.7;
+        text-decoration: none;
+    }
+
+}
+
+figure {
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.infoIcon {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &__icon {
+        width: 64px;
+        min-width: 64px;
+        height: 64px;
+        margin-right: 32px;
+
+        @include sm {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            margin-right: 24px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        @include font-m;
+    }
+
+    &__description {
+        @include font-s;
+        margin-top: 8px;
+    }
+
+    &.vertical {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+
+        .infoIcon {
+
+            &__icon {
+                width: 56px;
+                min-width: 56px;
+                height: 56px;
+                margin-right: 0px;
+                margin-bottom: 24px;
+
+            }
+
+            &__title {
+                @include font-m;
+            }
+
+            &__description {
+                @include font-s;
+            }
+        }
+    }
+}
+
+
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    overflow-x: hidden;
+
+    &__container {
+        @include transition;
+        width: 100%;
+        height: 100%;
+        padding: 0 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: white;
+        transform: scale(0.9);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        transform: perspective(0em) rotateX(0px);
+        transition: all 0.3s ease;
+        background-image: url("../assets/icons-black/icon-61.svg");
+
+        &:hover {
+            transform: rotate(90deg) scale(1.2);
+        }
+    }
+
+    &__video {
+        position: relative;
+        padding-bottom: 56.25vh;
+        padding-top: 30px;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &.open {
+        visibility: visible;
+
+        .modal {
+            &__container {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+    }
+}
