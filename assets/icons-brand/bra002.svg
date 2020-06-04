@@ -1,14 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-<g>
-	<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="46,30 63,20 63,52 46,42 46,52 1,52 1,20 
-		46,20 	"/>
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="6" y1="28" x2="10" y2="28"/>
-	<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="14" y1="28" x2="18" y2="28"/>
-	<rect x="7" y="36" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" width="18" height="10"/>
-	<polyline fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="6,12 32,12 40,20 	"/>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="20" y="20" width="160" height="160">
+<path d="M180 100C180 144.183 144.183 180 100 180C55.8172 180 20 144.183 20 100C20 55.8172 55.8172 20 100 20C144.183 20 180 55.8172 180 100Z" fill="url(#paint0_linear)"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M180 100C180 144.183 144.183 180 100 180C55.8172 180 20 144.183 20 100C20 55.8172 55.8172 20 100 20C144.183 20 180 55.8172 180 100Z" fill="url(#paint1_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29.2496 30.0473C24.0519 28.1802 18.3248 30.8802 16.4577 36.0778L13.077 45.4892L155.813 96.7625L149.615 114.016L6.87911 62.7431L-4.95316 95.6823C-6.82025 100.88 -4.12027 106.607 1.0774 108.474L124.992 152.986C130.19 154.853 135.917 152.153 137.784 146.956L159.195 87.3513C161.062 82.1536 158.362 76.4265 153.164 74.5594L29.2496 30.0473Z" fill="white" fill-opacity="0.4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.3206 34.951C15.81 28.0208 23.4462 24.4208 30.3764 26.9103L154.291 71.4223C161.221 73.9118 164.821 81.548 162.332 88.4782L140.921 148.083C138.431 155.013 130.795 158.613 123.865 156.123L-0.0495548 111.611C-6.97979 109.122 -10.5798 101.486 -8.0903 94.5554L13.3206 34.951ZM28.1226 33.1844C24.6575 31.9397 20.8394 33.7397 19.5947 37.2048L-1.81615 96.8092C-3.06088 100.274 -1.26089 104.092 2.20422 105.337L126.119 149.849C129.584 151.094 133.402 149.294 134.647 145.829L156.057 86.2244C157.302 82.7593 155.502 78.9412 152.037 77.6965L28.1226 33.1844Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M83.5704 120.398C84.1927 118.665 86.1018 117.765 87.8343 118.387L100.383 122.895C102.115 123.517 103.015 125.426 102.393 127.159C101.77 128.891 99.8614 129.791 98.1289 129.169L85.5806 124.662C83.848 124.039 82.948 122.13 83.5704 120.398Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M108.667 129.413C109.289 127.68 111.198 126.78 112.931 127.403L125.479 131.91C127.212 132.532 128.112 134.441 127.489 136.174C126.867 137.907 124.958 138.807 123.226 138.184L110.677 133.677C108.945 133.054 108.045 131.145 108.667 129.413Z" fill="white"/>
 </g>
+<defs>
+<linearGradient id="paint0_linear" x1="60.2526" y1="36.8421" x2="138.147" y2="166.316" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E6764D"/>
+<stop offset="1" stop-color="#FFA825"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="60.2526" y1="36.8421" x2="138.147" y2="166.316" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E6764D"/>
+<stop offset="1" stop-color="#FFA825"/>
+</linearGradient>
+</defs>
 </svg>

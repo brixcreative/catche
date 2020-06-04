@@ -1,15 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
-<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="1,63 1,2 62,63 "/>
-<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="14,54 14,30 38,54 "/>
-<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="8" y1="22" x2="2" y2="22"/>
-<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="6" y1="30" x2="2" y2="30"/>
-<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="8" y1="38" x2="2" y2="38"/>
-<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="6" y1="46" x2="2" y2="46"/>
-<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="8" y1="54" x2="2" y2="54"/>
-<polygon fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" points="25,1 19,7 55,43 63,45 61,37 "/>
-<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="25" y1="13" x2="31" y2="7"/>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="20" y="20" width="160" height="160">
+<path d="M180 100C180 144.183 144.183 180 100 180C55.8172 180 20 144.183 20 100C20 55.8172 55.8172 20 100 20C144.183 20 180 55.8172 180 100Z" fill="url(#paint0_linear)"/>
+</mask>
+<g mask="url(#mask0)">
+<path d="M180 100C180 144.183 144.183 180 100 180C55.8172 180 20 144.183 20 100C20 55.8172 55.8172 20 100 20C144.183 20 180 55.8172 180 100Z" fill="url(#paint1_linear)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.0002 61.4584C49.0797 61.4584 48.3335 62.2046 48.3335 63.1251V112.637C48.3335 132.938 57.8189 152.074 73.9756 164.366L98.991 183.399C99.5873 183.853 100.413 183.853 101.009 183.399L126.025 164.366C142.181 152.074 151.667 132.938 151.667 112.637V63.1251C151.667 62.2046 150.921 61.4584 150 61.4584H147.431C133.449 61.4584 119.882 56.7069 108.955 47.9832L101.04 41.6636C100.432 41.178 99.5685 41.178 98.9603 41.6636L91.0449 47.9832C80.1182 56.7069 66.5513 61.4584 52.5694 61.4584H50.0002ZM100 143.333C119.33 143.333 135 127.663 135 108.333C135 89.0034 119.33 73.3333 100 73.3333C80.6702 73.3333 65.0002 89.0034 65.0002 108.333C65.0002 127.663 80.6702 143.333 100 143.333Z" fill="white" fill-opacity="0.4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M96.8804 39.0586C98.705 37.6019 101.295 37.6019 103.12 39.0586L111.035 45.3782C121.371 53.6304 134.205 58.125 147.431 58.125H150C152.761 58.125 155 60.3636 155 63.125V112.637C155 133.979 145.028 154.096 128.043 167.019L103.028 186.052C101.239 187.413 98.7614 187.413 96.9725 186.052L71.9571 167.019C54.9718 154.096 45 133.979 45 112.637V63.125C45 60.3636 47.2386 58.125 50 58.125H52.5692C65.7954 58.125 78.6289 53.6304 88.9649 45.3782L96.8804 39.0586ZM100 45.0988L93.1244 50.5881C81.6072 59.7834 67.3069 64.7917 52.5692 64.7917H51.6667V112.637C51.6667 131.897 60.6656 150.051 75.9938 161.713L100 179.978L124.006 161.713C139.334 150.051 148.333 131.897 148.333 112.637V64.7917H147.431C132.693 64.7917 118.393 59.7833 106.876 50.5881L100 45.0988Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M117.348 95.9677C118.655 97.2647 118.663 99.3753 117.366 100.682L97.0389 121.157C95.0834 123.127 91.8977 123.127 89.9422 121.157L80.9677 112.117C79.6707 110.81 79.6784 108.7 80.9849 107.403C82.2914 106.106 84.4019 106.114 85.6989 107.42L93.4906 115.269L112.634 95.9849C113.931 94.6784 116.042 94.6707 117.348 95.9677Z" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="60.2526" y1="36.8421" x2="138.147" y2="166.316" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E6764D"/>
+<stop offset="1" stop-color="#FFA825"/>
+</linearGradient>
+<linearGradient id="paint1_linear" x1="60.2526" y1="36.8421" x2="138.147" y2="166.316" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E6764D"/>
+<stop offset="1" stop-color="#FFA825"/>
+</linearGradient>
+</defs>
 </svg>

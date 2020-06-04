@@ -313,22 +313,22 @@ function infoIcons() {
     const icons = [{
             name: "Diversity",
             description: "Lots of choices for every taste",
-            icon: `${pathAssets}/icons-brand/bra007.svg`
+            icon: `${pathAssets}/icons-brand/bra001.svg`
         },
         {
             name: "Modern",
             description: "Always the newest models available",
-            icon: `${pathAssets}/icons-brand/bra007.svg`
+            icon: `${pathAssets}/icons-brand/bra002.svg`
         },
         {
             name: "Trust",
             description: "All our clients are satisfied",
-            icon: `${pathAssets}/icons-brand/bra007.svg`
+            icon: `${pathAssets}/icons-brand/bra003.svg`
         },
         {
             name: "Easy",
             description: "Choose how you want to pay",
-            icon: `${pathAssets}/icons-brand/bra007.svg`
+            icon: `${pathAssets}/icons-brand/bra004.svg`
         }
     ];
 
