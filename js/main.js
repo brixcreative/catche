@@ -130,7 +130,6 @@ function mainNav() {
         linkItem.forEach(function (el) {
             el.style.opacity = "1";
         });
-        e.currentTarget.style.opacity = "1";
     }
 }
 
