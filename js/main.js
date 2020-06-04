@@ -204,16 +204,16 @@ footer();
 function sliderHeading() {
 
     const sliderHeadingItems = [{
-            img: `${pathAssets}/images/slider01.jpg`,
-            alt: "teste",
+            img: `${pathAssets}/images/slider01.jpeg`,
+            alt: "Modern Man wearing wrist watch",
         },
         {
-            img: `${pathAssets}/images/slider02.jpg`,
-            alt: "teste",
+            img: `${pathAssets}/images/slider02.jpeg`,
+            alt: "Man swiming with wrist watch",
         },
         {
-            img: `${pathAssets}/images/slider03.jpg`,
-            alt: "teste",
+            img: `${pathAssets}/images/slider03.jpeg`,
+            alt: "Modern Man wearing wrist watch",
         }
 
     ];
