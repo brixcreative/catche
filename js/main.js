@@ -147,7 +147,7 @@ function footer() {
         name: "Catche",
         text: "All Rights Reserved",
         creditsName: "Brix",
-        creditsUrl: "#",
+        creditsUrl: "https://www.instagram.com/brix.creative",
         link1: "Privacy Policy",
         link1url: "#",
         link2: "Cookie Policy",
@@ -313,12 +313,12 @@ function infoIcons() {
     const icons = [{
             name: "Diversity",
             description: "Lots of choices for every taste",
-            icon: `${pathAssets}/icons-brand/bra001.svg`
+            icon: `${pathAssets}/icons-brand/bra004.svg`
         },
         {
             name: "Modern",
             description: "Always the newest models available",
-            icon: `${pathAssets}/icons-brand/bra002.svg`
+            icon: `${pathAssets}/icons-brand/bra001.svg`
         },
         {
             name: "Trust",
@@ -328,7 +328,7 @@ function infoIcons() {
         {
             name: "Easy",
             description: "Choose how you want to pay",
-            icon: `${pathAssets}/icons-brand/bra004.svg`
+            icon: `${pathAssets}/icons-brand/bra002.svg`
         }
     ];
 
@@ -388,10 +388,10 @@ function contentMedia() {
     const contentMedia = [{
             img: "https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             alt: "image alt",
-            title: "Content Media",
-            subtitle: "With left alignment",
-            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-            ctaText: "button",
+            title: "our beliefs",
+            subtitle: "This is what we stand for",
+            text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+            ctaText: "know more",
             ctaStyle: "cta01"
         },
 
@@ -402,16 +402,13 @@ function contentMedia() {
         let template = `
 
         <div class="contentMedia__wrapper">
-            <figure class="contentMedia__image anime">
+            <figure class="contentMedia__image animeImg">
                 <img src="${el.img}" alt="${el.alt}">
             </figure>
             <div class="contentMedia__content">
                 <h2 class="contentMedia__title mainTitle anime">${el.title}</h2>
                 <h3 class="contentMedia__subtitle anime">${el.subtitle}</h3>
                 <p class="contentMedia__description anime">${el.text}</p> 
-                <div class="ctaContainer anime">
-                    <a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a>
-                </div>
             </div> 
          </div>`;
 
@@ -428,9 +425,9 @@ function contentMedia2() {
     const contentMedia = [{
             img: "https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             alt: "image alt",
-            title: "Content Media",
-            subtitle: "With left alignment",
-            text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+            title: "we care",
+            subtitle: "Your opinion matters!",
+            text: "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
             ctaText: "button",
             ctaStyle: "cta01"
         },
@@ -442,16 +439,14 @@ function contentMedia2() {
         let template = `
 
         <div class="contentMedia__wrapper">
-            <figure class="contentMedia__image anime">
+            <figure class="contentMedia__image animeImg">
                 <img src="${el.img}" alt="${el.alt}">
             </figure>
             <div class="contentMedia__content">
                 <h2 class="contentMedia__title mainTitle anime">${el.title}</h2>
                 <h3 class="contentMedia__subtitle anime">${el.subtitle}</h3>
                 <p class="contentMedia__description anime">${el.text}</p> 
-                <div class="ctaContainer anime">
-                    <a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a>
-                </div>
+
             </div> 
          </div>`;
 
@@ -596,24 +591,23 @@ productSlider();
 function ctaBlock() {
     const ctaBlock = [{
         img: "https://images.unsplash.com/photo-1522115174737-2497162f69ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        title: "Contact Us",
-        subtitle: "Subtitle if needed",
-        text: "Far far away, behind the world mountains, far from the countries Vokalia and Consonantia, theres live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
-        ctaText: "See contacts",
+        title: "get in touch",
+        subtitle: "Contact us if you have questions or comments and we will get back to you, as soon as possible!",
+        text: "",
+        ctaText: "Send email",
         ctaStyle: "cta01"
     }];
 
     ctaBlock.forEach(function (el) {
         let template = `
         <div class="ctaBlock__wrapper">
-            <figure class="ctaBlock__bgImage animeImg">
+            <figure class="ctaBlock__bgImage animeBg">
                 <img src="${el.img}" alt="${el.alt}">
             </figure>
             <div class="ctaBlock__content">
             <div class="ctaBlock__text">
                 <h2 class="ctaBlock__title mainTitle anime">${el.title}</h2>
                 <h3 class="ctaBlock__subtitle anime">${el.subtitle}</h3>
-                <p class="ctaBlock__description anime">${el.text}</p>
                 <div class="ctaContainer anime"><a href="" class="cta ${el.ctaStyle}"><span>${el.ctaText}</span></a></div>
                 </div>
             </div>

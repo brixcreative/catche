@@ -161,7 +161,6 @@ figure {
     }
 }
 
-
 .infoIcon {
     display: flex;
     width: 100%;
@@ -219,20 +218,28 @@ figure {
                 height: 56px;
                 margin-right: 0px;
                 margin-bottom: 24px;
+                @include transition2;
 
             }
 
             &__title {
                 @include font-m;
+                color: $m-01;
             }
 
             &__description {
                 @include font-s;
+                color: $neu-07;
+            }
+        }
+
+        &:hover {
+            figure {
+                transform: translateY(-10px);
             }
         }
     }
 }
-
 
 .modal {
     position: fixed;

@@ -293,14 +293,13 @@
 
 .footer {
     width: 100%;
-    color: white;
 
     &__top,
     &__bottom {
         @include paddingSide;
         padding-top: 40px;
         padding-bottom: 40px;
-        background-color: $neu-09;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -313,12 +312,14 @@
 
     &__top {
         height: 200px;
+        background-color: $neu-09;
     }
 
     &__bottom {
         padding-top: 24px;
         padding-bottom: 24px;
-        background: $g-01;
+        background: $neu-10;
+        color: $neu-07;
     }
 
     &__logo {
@@ -366,8 +367,8 @@
     }
 
     &__iconSocial {
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 24px;
     }
 
     &__links {
