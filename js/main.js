@@ -204,15 +204,15 @@ footer();
 function sliderHeading() {
 
     const sliderHeadingItems = [{
-            img: "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+            img: `${pathAssets}/images/slider01.jpg`,
             alt: "teste",
         },
         {
-            img: "https://images.unsplash.com/photo-1517463700628-5103184eac47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+            img: `${pathAssets}/images/slider02.jpg`,
             alt: "teste",
         },
         {
-            img: "https://images.unsplash.com/photo-1524738258074-f8125c6a7588?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=932&q=80",
+            img: `${pathAssets}/images/slider03.jpg`,
             alt: "teste",
         }
 
