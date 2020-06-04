@@ -134,6 +134,8 @@
 
         @include sm {
             display: none;
+            transition-delay: 0.4s;
+
         }
     }
 
@@ -312,13 +314,13 @@
 
     &__top {
         height: 200px;
-        background-color: $neu-09;
+        background-color: $neu-10;
     }
 
     &__bottom {
         padding-top: 24px;
         padding-bottom: 24px;
-        background: $neu-10;
+        background: $neu-11;
         color: $neu-07;
     }
 

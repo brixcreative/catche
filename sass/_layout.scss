@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $font;
     color: $neu-08;
     overflow-x: hidden;
+
 }
 
 .cenas {
@@ -106,19 +111,17 @@ body {
         width: auto;
     }
 
-    .swiper-pagination-bullet {
-        width: 40px;
+    .swiper-pagination-bullet,
+    .swiper-pagination-bullet-active {
         height: 2px;
-        border-radius: 0;
+        width: 32px;
         margin: 16px 0 !important;
-        box-shadow: inset 0px 0px 2px white;
-        background-color: rgba(white, 0.2);
     }
 
     .swiper-pagination-bullet-active {
-        box-shadow: inset 40px 0px 2px $m-02;
+        width: 40px;
+        height: 2px;
     }
-
 
 
     &__wrapper {

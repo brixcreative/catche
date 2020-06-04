@@ -1844,26 +1844,27 @@ figure img {
 }
 
 .swiper-pagination {
+  width: 100%;
   bottom: 24px !important;
 }
 
 .swiper-pagination-bullet {
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  width: 10px;
-  height: 10px;
-  margin: 0px 8px !important;
-  background-color: transparent;
-  -webkit-box-shadow: inset 0px 0px 0px 5px #7F8088;
-          box-shadow: inset 0px 0px 0px 5px #7F8088;
-  opacity: 0.3;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 16px;
+  height: 2px;
+  border-radius: 0;
+  margin: 0 8px !important;
+  -webkit-box-shadow: inset 0px 0px 2px white;
+          box-shadow: inset 0px 0px 2px white;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .swiper-pagination-bullet-active {
-  -webkit-box-shadow: inset 0px 0px 0px 2px #7F8088;
-          box-shadow: inset 0px 0px 0px 2px #7F8088;
+  -webkit-box-shadow: inset 40px 0px 2px #FFA825;
+          box-shadow: inset 40px 0px 2px #FFA825;
   opacity: 1;
-  border-radius: 6px;
+  height: 4px;
 }
 
 .swiper-button-prev,
@@ -1925,10 +1926,9 @@ figure img {
 }
 
 .white .swiper-pagination-bullet-active {
+  -webkit-box-shadow: inset 40px 0px 2px #FFA825;
+          box-shadow: inset 40px 0px 2px #FFA825;
   opacity: 1;
-  background-color: transparent;
-  -webkit-box-shadow: inset 0px 0px 0px 2px white;
-          box-shadow: inset 0px 0px 0px 2px white;
 }
 
 .white .swiper-button-prev:after {
@@ -2136,6 +2136,8 @@ figure img {
 @media screen and (max-width: 799px) {
   .mainNav__links {
     display: none;
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
   }
 }
 
@@ -3361,13 +3363,13 @@ figure img {
 
 .footer__top {
   height: 200px;
-  background-color: #363842;
+  background-color: #222328;
 }
 
 .footer__bottom {
   padding-top: 24px;
   padding-bottom: 24px;
-  background: #222328;
+  background: #1c1c1f;
   color: #7F8088;
 }
 
@@ -3443,6 +3445,10 @@ figure img {
 
 .footer__link:last-child {
   margin-right: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -3676,19 +3682,16 @@ body {
   width: auto;
 }
 
-.sliderHeading .swiper-pagination-bullet {
-  width: 40px;
+.sliderHeading .swiper-pagination-bullet,
+.sliderHeading .swiper-pagination-bullet-active {
   height: 2px;
-  border-radius: 0;
+  width: 32px;
   margin: 16px 0 !important;
-  -webkit-box-shadow: inset 0px 0px 2px white;
-          box-shadow: inset 0px 0px 2px white;
-  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .sliderHeading .swiper-pagination-bullet-active {
-  -webkit-box-shadow: inset 40px 0px 2px #FFA825;
-          box-shadow: inset 40px 0px 2px #FFA825;
+  width: 40px;
+  height: 2px;
 }
 
 .sliderHeading__wrapper {

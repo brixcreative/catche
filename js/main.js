@@ -30,18 +30,18 @@ function mainNav() {
     const mainNav = document.querySelector('.mainNav');
     const navLinks = [{
         name: "About",
-        url: "#"
+        url: "#about"
     }, {
         name: "Products",
-        url: "#"
+        url: "#products"
     }, {
         name: "Contacts",
-        url: "#"
+        url: "#contacts"
     }];
 
     let templateNav = `
         <div class="mainNav__logo">
-        <img src="${pathAssets}/images/logo-white.svg" alt="Logo">
+        <a href="#home"><img src="${pathAssets}/images/logo-white.svg" alt="Catche Logo"></a>
         </div>
         <div class="mainNav__icon"><span></span></div>
         <div class="mainNav__wrapper">
@@ -175,12 +175,12 @@ function footer() {
 
     let templateFooter = `
     <div class="footer__top anime">
-        <a href=""><img class="footer__logo" src="${footer.logo}" ></a>
+        <a href="#home"><img class="footer__logo" src="${footer.logo}" alt="Catche Logo"></a>
         <div class="footer__social">
         </div>
     </div>
         <div class="footer__bottom anime">
-            <p class="footer__text">${year} © ${footer.name} —  ${footer.text} | made by <a class="hiperlink" href="${footer.creditsUrl}" target="_blank">${footer.creditsName}</a></p>
+            <p class="footer__text">${year} © ${footer.name} —  ${footer.text} | made by <a class="hiperlink" href="${footer.creditsUrl}" target="_blank" rel="noopener">${footer.creditsName}</a></p>
             <div class="footer__links">
                 <a href="${footer.link1url}" class="footer__link hiperlink">${footer.link1}</a>
                 <a href="${footer.link2url}" class="footer__link hiperlink">${footer.link2}</a>
@@ -353,7 +353,7 @@ function infoIcons() {
         let template = `
                 <div class="infoIcons__infoIcon infoIcon vertical anime">
                     <figure class="infoIcon__icon">
-                        <img src="${el.icon}" alt="${el.name}">
+                        <img src="${el.icon}" alt="${el.name} - ${el.description}">
                     </figure>
                     <div class="infoIcon__text">
                         <p class="infoIcon__title">${el.name}</p>
@@ -387,8 +387,8 @@ infoIcons();
 function contentMedia() {
     const contentMedia = [{
             img: "https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-            alt: "image alt",
-            title: "our beliefs",
+            alt: "Modern man wearing wrist watch",
+            title: "Our beliefs",
             subtitle: "This is what we stand for",
             text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
             ctaText: "know more",
@@ -424,8 +424,8 @@ contentMedia();
 function contentMedia2() {
     const contentMedia = [{
             img: "https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
-            alt: "image alt",
-            title: "we care",
+            alt: "Man holding wrist watch",
+            title: "We Care",
             subtitle: "Your opinion matters!",
             text: "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
             ctaText: "button",
