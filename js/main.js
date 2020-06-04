@@ -180,7 +180,7 @@ function footer() {
         </div>
     </div>
         <div class="footer__bottom anime">
-            <p class="footer__text">${year} © ${footer.name} —  ${footer.text} by <a href="${footer.creditsUrl}" target="_blank">${footer.creditsName}</a></p>
+            <p class="footer__text">${year} © ${footer.name} —  ${footer.text} | made by <a class="hiperlink" href="${footer.creditsUrl}" target="_blank">${footer.creditsName}</a></p>
             <div class="footer__links">
                 <a href="${footer.link1url}" class="footer__link hiperlink">${footer.link1}</a>
                 <a href="${footer.link2url}" class="footer__link hiperlink">${footer.link2}</a>
