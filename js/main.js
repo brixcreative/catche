@@ -393,7 +393,7 @@ infoIcons();
 
 function contentMedia() {
     const contentMedia = [{
-            img: "https://images.unsplash.com/photo-1507680434567-5739c80be1ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+            img: `${pathAssets}/images/content01.jpg`,
             alt: "Modern man wearing wrist watch",
             title: "Our beliefs",
             subtitle: "This is what we stand for",
@@ -430,7 +430,7 @@ contentMedia();
 
 function contentMedia2() {
     const contentMedia = [{
-            img: "https://images.unsplash.com/photo-1532667449560-72a95c8d381b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+            img: `${pathAssets}/images/content02.jpg`,
             alt: "Man holding wrist watch",
             title: "We Care",
             subtitle: "Your opinion matters!",
