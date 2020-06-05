@@ -691,11 +691,11 @@ function sliderTestimonials() {
             effect: "coverflow",
 
             coverflowEffect: {
-                rotate: 30,
+                rotate: 100,
                 slideShadows: false,
-                stretch: 80,
-                depth: 20,
-                modifier: 4,
+                stretch: 200,
+                depth: 0,
+                modifier: 1,
             },
 
 
