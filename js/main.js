@@ -131,6 +131,10 @@ function mainNav() {
             el.style.opacity = "1";
         });
     }
+
+    linkItem.forEach(function (el) {
+        el.addEventListener("click", openNavMobile)
+    });
 }
 
 mainNav();
