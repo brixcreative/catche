@@ -162,7 +162,7 @@ body {
         }
 
         &:before {
-            background-image: url("/assets/images/bgslider.jpg");
+            background-image: url("../assets/images/bgslider.jpg");
             background-size: cover;
             filter: grayscale(100%);
         }
