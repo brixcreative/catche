@@ -228,10 +228,6 @@ footer {
 @mixin cardStyle1 {
     @include transition2;
     overflow: hidden;
-    //padding: 24px;
-    //border-radius: $radius;
-    // border: 1px solid $neu-05;
-    //box-shadow: $shadow;
     background-color: white;
 
 
@@ -239,31 +235,6 @@ footer {
         transform: translateY(4px);
         box-shadow: $shadowHover;
 
-
-        @include sm {
-            transform: translateY(0);
-            box-shadow: $shadow;
-        }
-    }
-}
-
-@mixin cardStyle2 {
-    @include transition;
-    overflow: hidden;
-    padding: 40px;
-    border-radius: $radius;
-    border: 1px solid $neu-05;
-    box-shadow: $shadow;
-    background-color: white;
-
-    @include sm {
-        padding: 24px;
-    }
-
-
-    &:hover {
-        transform: translateY(4px);
-        box-shadow: $shadowHover;
 
         @include sm {
             transform: translateY(0);

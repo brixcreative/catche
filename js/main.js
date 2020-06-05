@@ -560,6 +560,7 @@ function productSlider() {
         speed: 500,
         slidesPerView: 4,
         spaceBetween: 32,
+
         breakpoints: {
             1023: {
                 slidesPerView: 4,
@@ -609,9 +610,7 @@ function ctaBlock() {
     ctaBlock.forEach(function (el) {
         let template = `
         <div class="ctaBlock__wrapper">
-            <figure class="ctaBlock__bgImage animeBg">
-                <img src="${el.img}" alt="${el.alt}">
-            </figure>
+            
             <div class="ctaBlock__content">
             <div class="ctaBlock__text">
                 <h2 class="ctaBlock__title mainTitle anime">${el.title}</h2>
@@ -625,3 +624,96 @@ function ctaBlock() {
     });
 };
 ctaBlock();
+
+
+/*********************************/
+// Highlight Slider -  Testimonials 
+
+function sliderTestimonials() {
+    const testimonials = {
+        title: "What Our Clients Think",
+        img: `${pathAssets}/images/content03.jpg`,
+        alt: "Wrist Watch close up photo"
+    }
+
+    const quotes = [{
+            name: "Jack F. — 2019",
+            text: "If you want a real product - Catche's got you covered. Thanks guys, keep up the good work! I couldn't have asked for more than this. No matter where you go, Catche is the coolest, most happening thing around!",
+        },
+        {
+            name: "Mary Jane W. — 2019",
+            text: "I wish I would have thought of it first. Catche is the real deal! We were treated like royalty. Great costumer service and fast shipping. 5 stars!",
+        },
+        {
+            name: "Sean C. — 2019",
+            text: "I can't say enough about Catche. I made back the purchase price in just 48 hours! I am completely blown away. The watch I bought is really wonderful.",
+        }
+    ];
+
+    function templateModule() {
+        let template = `
+            <figure class="highlightSlider__bgImage animeImg">
+                <img src="${testimonials.img}" alt="${testimonials.alt}">
+            </figure>
+            <div class="highlightSlider__wrapper">
+                <div class="highlightSlider__heading">
+                    <h3 class="highlightSlider__title">${testimonials.title}</h3>
+                </div>
+                <div class="highlightSlider__slider swiper-container">
+                    <div class="swiper-wrapper"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>`;
+        document.querySelector('.highlightSlider.testimonials').insertAdjacentHTML("beforeend", template);
+    };
+
+    function templateQuotes() {
+        quotes.forEach(function (el) {
+            let template = `
+                <div class="swiper-slide">
+                <div class="highlightSlider__content">
+                    <div class="highlightSlider__text">
+                        <p class="highlightSlider__subtitle anime">${el.text}</p>
+                        <p class="highlightSlider__description anime">${el.name}</p>
+                        </div>
+                    </div>
+                </div>`;
+            document.querySelector(".highlightSlider.testimonials .swiper-wrapper").insertAdjacentHTML("beforeend", template);
+
+        });
+
+        var mySwiper = new Swiper('.testimonials .highlightSlider__slider.swiper-container', {
+            // Optional parameters
+            loop: true,
+            speed: 700,
+            effect: "coverflow",
+
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
+                stretch: 80,
+                depth: 20,
+                modifier: 4,
+            },
+
+
+            // If we need pagination
+            pagination: {
+                el: '.highlightSlider .swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.highlightSlider .swiper-button-next',
+                prevEl: '.highlightSlider .swiper-button-prev',
+            },
+        });
+    };
+
+    templateModule();
+    templateQuotes();
+}
+
+sliderTestimonials();

@@ -138,3 +138,18 @@ $g-01: linear-gradient(148deg, $m-01, $m-02);
     background-color: $neu-09;
 
 }
+
+.g-01 {
+    background: $g-01;
+    color: white;
+
+    .cta {
+        &.cta01 {
+            @include cta01alt;
+        }
+
+        &.cta02 {
+            @include cta02alt;
+        }
+    }
+}
