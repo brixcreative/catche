@@ -216,6 +216,10 @@ function sliderHeading() {
             alt: "Man swiming with wrist watch",
         },
         {
+            img: `${pathAssets}/images/slider04.jpeg`,
+            alt: "Woman wearing wrist watch",
+        },
+        {
             img: `${pathAssets}/images/slider03.jpeg`,
             alt: "Modern Man wearing wrist watch",
         }
