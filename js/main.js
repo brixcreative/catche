@@ -598,6 +598,7 @@ productSlider();
 function ctaBlock() {
     const ctaBlock = [{
         img: `${pathAssets}/images/content03.jpg`,
+        alt: "Wrist watch photo close up",
         title: "get in touch",
         subtitle: "Contact us if you have questions or comments and we will get back to you, as soon as possible!",
         text: "",
