@@ -597,7 +597,7 @@ productSlider();
 
 function ctaBlock() {
     const ctaBlock = [{
-        img: "https://images.unsplash.com/photo-1522115174737-2497162f69ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        img: `${pathAssets}/images/content03.jpg`,
         title: "get in touch",
         subtitle: "Contact us if you have questions or comments and we will get back to you, as soon as possible!",
         text: "",
