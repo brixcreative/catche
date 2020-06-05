@@ -365,27 +365,6 @@ body {
         position: relative;
         overflow: visible;
 
-        &:before {
-
-            content: '';
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            top: -40px;
-            left: 5vw;
-            background-image: url("../assets/images/quote.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            z-index: 1;
-
-            @include sm {
-                width: 64px;
-                height: 64px;
-                top: -32px;
-            }
-        }
-
         .swiper-slide-active {
             .highlightSlider {
 

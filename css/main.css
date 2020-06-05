@@ -4653,28 +4653,6 @@ body {
   overflow: visible;
 }
 
-.highlightSlider.testimonials:before {
-  content: '';
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: -40px;
-  left: 5vw;
-  background-image: url("../assets/images/quote.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 1;
-}
-
-@media screen and (max-width: 799px) {
-  .highlightSlider.testimonials:before {
-    width: 64px;
-    height: 64px;
-    top: -32px;
-  }
-}
-
 .highlightSlider.testimonials .swiper-slide-active .highlightSlider__title, .highlightSlider.testimonials .swiper-slide-active .highlightSlider__subtitle, .highlightSlider.testimonials .swiper-slide-active .highlightSlider__description {
   -webkit-animation: none;
           animation: none;
