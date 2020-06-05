@@ -3753,7 +3753,7 @@ body {
 }
 
 .sliderHeading__wrapper:before {
-  background-image: url("https://images.unsplash.com/photo-1528139494595-a848e52c6335?ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80");
+  background-image: url("/assets/images/bgslider.jpg");
   background-size: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);

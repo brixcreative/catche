@@ -463,37 +463,37 @@ contentMedia2();
 
 function productSlider() {
     const products = [{
-            img: "https://images.unsplash.com/photo-1488132828189-4e416661b680?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            img: `${pathAssets}/images/product01.jpg`,
             title: "GANT",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1541778480-fc1752bbc2a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1459&q=80",
+            img: `${pathAssets}/images/product02.jpg`,
             title: "Tube Watch S38",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1533237742545-cdc658d90afb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            img: `${pathAssets}/images/product03.jpg`,
             title: "LIGE",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1507428861205-e8aab693190e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2120&q=80",
+            img: `${pathAssets}/images/product04.jpg`,
             title: "Citizen Echo Drive",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1529655608570-ca66f0aae5e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
+            img: `${pathAssets}/images/product05.jpg`,
             title: "Seiko SNK809",
             subtitle: "subtitle",
             url: "#",
         },
         {
-            img: "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+            img: `${pathAssets}/images/product06.jpg`,
             title: "Hunters Race Zeus",
             subtitle: "subtitle",
             url: "#",
