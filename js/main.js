@@ -132,9 +132,11 @@ function mainNav() {
         });
     }
 
-    linkItem.forEach(function (el) {
-        el.addEventListener("click", openNavMobile)
-    });
+    if (window.innerWidth < 799) {
+        linkItem.forEach(function (el) {
+            el.addEventListener("click", openNavMobile)
+        });
+    }
 }
 
 mainNav();
@@ -278,30 +280,8 @@ function sliderHeading() {
         },
     });
 
-    const sliderWrapper = document.querySelector(".sliderHeading__slider"),
-        title = document.querySelector(".sliderHeading__text");
-
-    sliderWrapper.addEventListener("mouseover", addBlur);
-    title.addEventListener("mouseover", addBlur);
-
-    sliderWrapper.addEventListener("mouseout", removeBlur);
-    title.addEventListener("mouseout", removeBlur);
 
 
-    function addBlur() {
-        if (window.innerWidth > 799) {
-            title.style.filter = "blur(10px)";
-            title.style.opacity = "0.2";
-            title.style.transition = "all 0.8s 0s ease";
-            title.style.transform = "scaleY(2)";
-        }
-    }
-
-    function removeBlur() {
-        title.style.filter = "blur(0px)";
-        title.style.opacity = "1";
-        title.style.transform = "scaleY(1)";
-    }
 };
 
 sliderHeading();
@@ -631,7 +611,7 @@ ctaBlock();
 
 function sliderTestimonials() {
     const testimonials = {
-        title: "What Our Clients Think",
+        title: "Client's opinions",
         img: `${pathAssets}/images/content03.jpg`,
         alt: "Wrist Watch close up photo"
     }
@@ -674,7 +654,7 @@ function sliderTestimonials() {
             let template = `
                 <div class="swiper-slide">
                 <div class="highlightSlider__content">
-                    <div class="highlightSlider__text">
+                    <div class="highlightSlider__text anime">
                         <p class="highlightSlider__subtitle anime">${el.text}</p>
                         <p class="highlightSlider__description anime">${el.name}</p>
                         </div>

@@ -2178,6 +2178,7 @@ figure img {
   font-weight: 700;
   margin-right: 64px;
   position: relative;
+  padding: 8px 0;
 }
 
 .mainNav__linkItem:last-child {
@@ -2189,7 +2190,7 @@ figure img {
   width: 8px;
   height: 8px;
   left: 0;
-  bottom: -26px;
+  bottom: -8px;
   position: absolute;
   background-color: #FFA825;
   opacity: 0;
@@ -2202,7 +2203,7 @@ figure img {
 .mainNav__linkItem:hover:before {
   width: 100%;
   height: 2px;
-  bottom: -8px;
+  bottom: 0px;
   opacity: 1;
   -webkit-transition: all 0.2s 0s ease, width 0.2s 0.2s ease, height 0.2s 0.1s ease;
   transition: all 0.2s 0s ease, width 0.2s 0.2s ease, height 0.2s 0.1s ease;
@@ -3558,6 +3559,8 @@ body {
   height: 2px;
   width: 32px;
   margin: 16px 0 !important;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .sliderHeading .swiper-pagination-bullet-active {
@@ -4658,6 +4661,10 @@ body {
           animation: none;
 }
 
+.highlightSlider.testimonials .swiper-slide-active .highlightSlider__text:before {
+  height: 100%;
+}
+
 .highlightSlider.testimonials .swiper-slide-next .highlightSlider__title, .highlightSlider.testimonials .swiper-slide-next .highlightSlider__subtitle, .highlightSlider.testimonials .swiper-slide-next .highlightSlider__description,
 .highlightSlider.testimonials .swiper-slide-prev .highlightSlider__title,
 .highlightSlider.testimonials .swiper-slide-prev .highlightSlider__subtitle,
@@ -4753,6 +4760,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 799px) {
@@ -4762,7 +4771,32 @@ body {
   }
 }
 
+.highlightSlider.testimonials .highlightSlider__text:before {
+  -webkit-transition: all 0.4s 0.4s ease;
+  transition: all 0.4s 0.4s ease;
+  content: '';
+  width: 8px;
+  height: 0%;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(148deg, #e6764d, #FFA825);
+}
+
+@-webkit-keyframes line {
+  0% {
+    height: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    height: 0;
+  }
+}
+
 .highlightSlider.testimonials .highlightSlider__subtitle, .highlightSlider.testimonials .highlightSlider__description {
+  -webkit-transition: all 0.4s 0.4s ease;
+  transition: all 0.4s 0.4s ease;
   max-width: 720px;
   width: 100%;
 }
@@ -4773,6 +4807,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 32px;
+  font-style: italic;
 }
 
 @media screen and (max-width: 799px) {
@@ -4790,10 +4825,6 @@ body {
     font-size: 18px;
     line-height: 28px;
   }
-}
-
-.highlightSlider.testimonials .highlightSlider__description {
-  text-align: center;
 }
 
 .highlightSlider.testimonials:hover .highlightSlider__bgImage img {

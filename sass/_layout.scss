@@ -70,6 +70,7 @@ body {
         height: 2px;
         width: 32px;
         margin: 16px 0 !important;
+        @include transition;
     }
 
     .swiper-pagination-bullet-active {
@@ -373,6 +374,12 @@ body {
                 &__description {
                     animation: none;
                 }
+
+                &__text {
+                    &:before {
+                        height: 100%;
+                    }
+                }
             }
         }
 
@@ -433,26 +440,44 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                position: relative;
+                padding-left: 40px;
+
 
                 @include sm {
                     width: 100%;
                     padding: 0;
                 }
+
+                &:before {
+                    transition: all 0.4s 0.4s ease;
+                    content: '';
+                    width: 8px;
+                    height: 0%;
+                    position: absolute;
+                    left: 0;
+                    background: $g-01;
+                    // animation: line 0.4s 0.4s ease both;
+
+                    @keyframes line {
+                        0% {
+                            height: 0;
+                        }
+                    }
+                }
             }
 
             &__subtitle,
             &__description {
+                transition: all 0.4s 0.4s ease;
                 max-width: $textMaxWidth;
                 width: 100%;
-
             }
 
             &__subtitle {
                 @include font-m;
-            }
+                font-style: italic;
 
-            &__description {
-                text-align: center;
             }
         }
 
