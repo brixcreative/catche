@@ -407,27 +407,29 @@ body {
             }
 
             &__heading {
-                @include paddingSide;
+                @include wrapper;
                 @include spacingL;
-                position: absolute;
+                //position: absolute;
                 width: 100%;
                 text-align: center;
                 color: white;
                 align-items: center;
-                left: 50%;
-                transform: translateX(-50%);
-                max-width: calc(1024px + 10vw);
+                padding-bottom: 0;
             }
 
 
             &__content {
                 @include paddingSide;
                 @include spacingL;
-                margin-top: 100px;
+
                 max-width: calc(1024px + 10vw);
                 width: 100%;
                 display: flex;
                 justify-content: center;
+
+                @include sm {
+                    padding-bottom: 80px;
+                }
             }
 
             &__text {
@@ -445,6 +447,7 @@ body {
                 @include sm {
                     width: 100%;
                     padding: 0;
+                    padding-left: 24px;
                 }
 
                 &:before {
@@ -455,13 +458,11 @@ body {
                     position: absolute;
                     left: 0;
                     background: $g-01;
-                    // animation: line 0.4s 0.4s ease both;
 
-                    @keyframes line {
-                        0% {
-                            height: 0;
-                        }
+                    @include sm {
+                        width: 4px;
                     }
+
                 }
             }
 

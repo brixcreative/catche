@@ -673,7 +673,7 @@ function sliderTestimonials() {
             coverflowEffect: {
                 rotate: 100,
                 slideShadows: false,
-                stretch: 200,
+                stretch: 100,
                 depth: 0,
                 modifier: 1,
             },
