@@ -3405,6 +3405,24 @@ figure img {
   width: 160px;
 }
 
+.footer__text {
+  margin-top: 24px;
+  max-width: 720px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 799px) {
+  .footer__text {
+    margin-top: 16px;
+  }
+}
+
+.footer__text:first-child {
+  margin-top: 0;
+}
+
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4714,6 +4732,12 @@ body {
   .highlightSlider.testimonials .highlightSlider__heading {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .highlightSlider.testimonials .highlightSlider__heading {
+    padding-bottom: 0;
   }
 }
 

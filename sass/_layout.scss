@@ -415,6 +415,10 @@ body {
                 color: white;
                 align-items: center;
                 padding-bottom: 0;
+
+                @include sm {
+                    padding-bottom: 0;
+                }
             }
 
 

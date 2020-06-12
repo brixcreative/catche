@@ -329,6 +329,10 @@
         width: 160px;
     }
 
+    &__text {
+        @include font-s;
+    }
+
     &__social {
         display: flex;
     }
