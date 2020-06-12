@@ -153,7 +153,6 @@ body {
         max-width: 70%;
         width: fit-content;
         position: absolute;
-        min-width: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -162,7 +161,7 @@ body {
         transition: all 1s ease;
 
         @include sm {
-            width: 100%;
+            max-width: 100%;
             padding: 24px 5vw;
         }
 
@@ -615,6 +614,7 @@ body {
         justify-content: flex-end;
         flex-direction: column;
         position: relative;
+        cursor: pointer;
 
 
         &:before {
@@ -968,5 +968,10 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
         grid-gap: 32px;
         grid-row-gap: 40px;
+
+        @include sm {
+            grid-template-columns: 1fr 1fr;
+
+        }
     }
 }

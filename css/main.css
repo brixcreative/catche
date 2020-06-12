@@ -1376,6 +1376,10 @@ footer .animeImg img {
           transform: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 .ctaContainer {
   width: 100%;
 }
@@ -1416,6 +1420,7 @@ footer .animeImg img {
   position: relative;
   overflow: hidden;
   border-radius: 32px;
+  cursor: pointer;
 }
 
 .cta span {
@@ -1429,6 +1434,7 @@ footer .animeImg img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 .cta span:before, .cta span:after {
@@ -3703,7 +3709,6 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   position: absolute;
-  min-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3732,7 +3737,7 @@ body {
 
 @media screen and (max-width: 799px) {
   .sliderHeading__text {
-    width: 100%;
+    max-width: 100%;
     padding: 24px 5vw;
   }
 }
@@ -5158,6 +5163,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 .productSlider__card:hover {
@@ -6008,5 +6014,12 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 32px;
   grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 799px) {
+  .infoIcons__icons {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 /*# sourceMappingURL=main.css.map */
