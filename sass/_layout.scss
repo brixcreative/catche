@@ -80,7 +80,6 @@ body {
 
 
     &__wrapper {
-        //@include paddingSide;
         display: flex;
         height: 100%;
         position: relative;
@@ -129,7 +128,6 @@ body {
 
     &__image {
         height: 100%;
-        //filter: grayscale(100%);
         @include overlay;
         @include transition;
 
@@ -152,10 +150,10 @@ body {
 
     &__text {
         @include paddingSide;
-        width: 70%;
+        max-width: 70%;
+        width: fit-content;
         position: absolute;
         min-width: 300px;
-        //padding-top: calc(48px + 100px);
         display: flex;
         flex-direction: column;
         justify-content: center;

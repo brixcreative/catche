@@ -3680,7 +3680,10 @@ body {
 .sliderHeading__text {
   padding-left: 5%;
   padding-right: 5%;
-  width: 70%;
+  max-width: 70%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   position: absolute;
   min-width: 300px;
   display: -webkit-box;
